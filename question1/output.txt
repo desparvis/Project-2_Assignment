@@ -1,0 +1,16 @@
+root           1  0.0  0.3  21636 12896 ?        Ss   12:19   0:02 /sbin/init
+root           2  0.0  0.0   2616  1444 ?        Sl   12:19   0:00 /init
+root           6  0.0  0.0   2616   132 ?        Sl   12:19   0:00 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+root          51  0.0  0.4  50428 16836 ?        S<s  12:19   0:03 /usr/lib/systemd/systemd-journald
+root          93  0.0  0.1  24128  6144 ?        Ss   12:19   0:10 /usr/lib/systemd/systemd-udevd
+root         154  0.0  0.0   4236  2684 ?        Ss   12:19   0:00 /usr/sbin/cron -f -P
+root         177  0.0  0.2  17980  8220 ?        Ss   12:19   0:00 /usr/lib/systemd/systemd-logind
+root         182  0.0  0.5 1756096 19996 ?       Ssl  12:19   0:02 /usr/libexec/wsl-pro-service -vv
+root         188  0.0  0.0   3160  1184 hvc0     Ss+  12:19   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         198  0.0  0.0   3116  1072 tty1     Ss+  12:19   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         216  0.0  0.6 107020 22300 ?        Ssl  12:19   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         220  0.0  0.1   6824  4820 ?        Ss   12:19   0:00 /usr/sbin/apache2 -k start
+root         370  0.0  0.0   2616   124 ?        Ss   12:19   0:00 /init
+root         371  0.0  0.0   2616   124 ?        S    12:19   0:00 /init
+root         373  0.0  0.1   6816  4588 pts/1    Ss   12:19   0:00 /bin/login -f
+avellin     2157  0.0  0.0   4088  1980 pts/0    S+   16:41   0:00 grep root

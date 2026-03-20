@@ -1,0 +1,1301 @@
+2155  execve("./q1", ["./q1"], 0x7fffa10f2d28 /* 28 vars */) = 0
+2155  brk(NULL)                         = 0x56413d581000
+2155  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f29b69db000
+2155  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2155  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2155  fstat(3, {st_mode=S_IFREG|0644, st_size=23575, ...}) = 0
+2155  mmap(NULL, 23575, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f29b69d5000
+2155  close(3)                          = 0 
+2155  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2155  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2155  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2155  fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2155  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2155  mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f29b67c3000
+2155  mmap(0x7f29b67eb000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f29b67eb000
+2155  mmap(0x7f29b6973000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7f29b6973000
+2155  mmap(0x7f29b69c2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7f29b69c2000
+2155  mmap(0x7f29b69c8000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f29b69c8000
+2155  close(3)                          = 0
+2155  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f29b67c0000
+2155  arch_prctl(ARCH_SET_FS, 0x7f29b67c0740) = 0
+2155  set_tid_address(0x7f29b67c0a10)   = 2155
+2155  set_robust_list(0x7f29b67c0a20, 24) = 0
+2155  rseq(0x7f29b67c1060, 0x20, 0, 0x53053053) = 0
+2155  mprotect(0x7f29b69c2000, 16384, PROT_READ) = 0
+2155  mprotect(0x564108735000, 4096, PROT_READ) = 0
+2155  mprotect(0x7f29b6a13000, 8192, PROT_READ) = 0
+2155  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2155  munmap(0x7f29b69d5000, 23575)     = 0
+2155  pipe2([3, 4], 0)                  = 0
+2155  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f29b67c0a10) = 2156
+2156  set_robust_list(0x7f29b67c0a20, 24 <unfinished ...>
+2155  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+2156  <... set_robust_list resumed>)    = 0
+2156  dup2(4, 1)                        = 1
+2156  close(3 <unfinished ...>
+2155  <... clone resumed>, child_tidptr=0x7f29b67c0a10) = 2157
+2156  <... close resumed>)              = 0
+2155  close(3 <unfinished ...>
+2157  set_robust_list(0x7f29b67c0a20, 24 <unfinished ...>
+2155  <... close resumed>)              = 0
+2156  close(4 <unfinished ...>
+2155  close(4 <unfinished ...>
+2157  <... set_robust_list resumed>)    = 0
+2155  <... close resumed>)              = 0
+2156  <... close resumed>)              = 0
+2155  wait4(-1,  <unfinished ...>
+2157  dup2(3, 0 <unfinished ...>
+2156  execve("/home/avellin/.cargo/bin/ps", ["ps", "aux"], 0x7fffbd2ef368 /* 28 vars */ <unfinished ...>
+2157  <... dup2 resumed>)               = 0
+2156  <... execve resumed>)             = -1 ENOENT (No such file or directory)
+2157  openat(AT_FDCWD, "output.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644 <unfinished ...>
+2156  execve("/usr/local/sbin/ps", ["ps", "aux"], 0x7fffbd2ef368 /* 28 vars */) = -1 ENOENT (No such file or directory)
+2156  execve("/usr/local/bin/ps", ["ps", "aux"], 0x7fffbd2ef368 /* 28 vars */) = -1 ENOENT (No such file or directory)
+2156  execve("/usr/sbin/ps", ["ps", "aux"], 0x7fffbd2ef368 /* 28 vars */) = -1 ENOENT (No such file or directory)
+2157  <... openat resumed>)             = 5
+2156  execve("/usr/bin/ps", ["ps", "aux"], 0x7fffbd2ef368 /* 28 vars */ <unfinished ...>
+2157  dup2(5, 1)                        = 1
+2157  close(5)                          = 0
+2157  close(3 <unfinished ...>
+2156  <... execve resumed>)             = 0
+2157  <... close resumed>)              = 0
+2156  brk(NULL <unfinished ...>
+2157  close(4 <unfinished ...>
+2156  <... brk resumed>)                = 0x5560227c4000
+2157  <... close resumed>)              = 0
+2157  execve("/home/avellin/.cargo/bin/grep", ["grep", "root"], 0x7fffbd2ef368 /* 28 vars */ <unfinished ...>
+2156  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2157  <... execve resumed>)             = -1 ENOENT (No such file or directory)
+2156  <... mmap resumed>)               = 0x7fa311009000
+2157  execve("/usr/local/sbin/grep", ["grep", "root"], 0x7fffbd2ef368 /* 28 vars */ <unfinished ...>
+2156  access("/etc/ld.so.preload", R_OK <unfinished ...>
+2157  <... execve resumed>)             = -1 ENOENT (No such file or directory)
+2156  <... access resumed>)             = -1 ENOENT (No such file or directory)
+2157  execve("/usr/local/bin/grep", ["grep", "root"], 0x7fffbd2ef368 /* 28 vars */ <unfinished ...>
+2156  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  <... execve resumed>)             = -1 ENOENT (No such file or directory)
+2156  <... openat resumed>)             = 3
+2157  execve("/usr/sbin/grep", ["grep", "root"], 0x7fffbd2ef368 /* 28 vars */ <unfinished ...>
+2156  fstat(3,  <unfinished ...>
+2157  <... execve resumed>)             = -1 ENOENT (No such file or directory)
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=23575, ...}) = 0
+2157  execve("/usr/bin/grep", ["grep", "root"], 0x7fffbd2ef368 /* 28 vars */ <unfinished ...>
+2156  mmap(NULL, 23575, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa311003000
+2156  close(3 <unfinished ...>
+2157  <... execve resumed>)             = 0
+2156  <... close resumed>)              = 0
+2157  brk(NULL)                         = 0x558337143000
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libproc2.so.0", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2156  <... openat resumed>)             = 3
+2157  <... mmap resumed>)               = 0x7fecf5f2b000
+2156  read(3,  <unfinished ...>
+2157  access("/etc/ld.so.preload", R_OK <unfinished ...>
+2156  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2157  <... access resumed>)             = -1 ENOENT (No such file or directory)
+2156  fstat(3,  <unfinished ...>
+2157  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=203400, ...}) = 0
+2157  <... openat resumed>)             = 3
+2156  mmap(NULL, 205200, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2157  fstat(3,  <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310fd0000
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=23575, ...}) = 0
+2156  mmap(0x7fa310fdd000, 86016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000 <unfinished ...>
+2157  mmap(NULL, 23575, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310fdd000
+2157  <... mmap resumed>)               = 0x7fecf5f25000
+2156  mmap(0x7fa310ff2000, 40960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000 <unfinished ...>
+2157  close(3 <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310ff2000
+2157  <... close resumed>)              = 0
+2156  mmap(0x7fa310ffc000, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000 <unfinished ...>
+2157  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310ffc000
+2157  <... openat resumed>)             = 3
+2157  read(3,  <unfinished ...>
+2156  close(3 <unfinished ...>
+2157  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2156  <... close resumed>)              = 0
+2157  fstat(3,  <unfinished ...>
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=625344, ...}) = 0
+2156  <... openat resumed>)             = 3
+2157  mmap(NULL, 627472, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2156  read(3,  <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5e8b000
+2156  <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2157  mmap(0x7fecf5e8d000, 450560, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000 <unfinished ...>
+2156  pread64(3,  <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5e8d000
+2156  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2157  mmap(0x7fecf5efb000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x70000 <unfinished ...>
+2156  fstat(3,  <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5efb000
+2156  <... fstat resumed>{st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2157  mmap(0x7fecf5f23000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x97000 <unfinished ...>
+2156  pread64(3,  <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5f23000
+2156  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2157  close(3 <unfinished ...>
+2156  mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2157  <... close resumed>)              = 0
+2156  <... mmap resumed>)               = 0x7fa310dbe000
+2157  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  mmap(0x7fa310de6000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000 <unfinished ...>
+2157  <... openat resumed>)             = 3
+2156  <... mmap resumed>)               = 0x7fa310de6000
+2157  read(3,  <unfinished ...>
+2156  mmap(0x7fa310f6e000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000 <unfinished ...>
+2157  <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2156  <... mmap resumed>)               = 0x7fa310f6e000
+2157  pread64(3,  <unfinished ...>
+2156  mmap(0x7fa310fbd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000 <unfinished ...>
+2157  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2156  <... mmap resumed>)               = 0x7fa310fbd000
+2157  fstat(3,  <unfinished ...>
+2156  mmap(0x7fa310fc3000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2157  <... fstat resumed>{st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2156  <... mmap resumed>)               = 0x7fa310fc3000
+2157  pread64(3,  <unfinished ...>
+2156  close(3 <unfinished ...>
+2157  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2156  <... close resumed>)              = 0
+2157  mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsystemd.so.0", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5c79000
+2156  <... openat resumed>)             = 3
+2157  mmap(0x7fecf5ca1000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000 <unfinished ...>
+2156  read(3,  <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5ca1000
+2156  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2157  mmap(0x7fecf5e29000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000 <unfinished ...>
+2156  fstat(3,  <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5e29000
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=910592, ...}) = 0
+2157  mmap(0x7fecf5e78000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000 <unfinished ...>
+2156  mmap(NULL, 915016, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5e78000
+2156  <... mmap resumed>)               = 0x7fa310cde000
+2157  mmap(0x7fecf5e7e000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2156  mmap(0x7fa310cf4000, 585728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000 <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5e7e000
+2156  <... mmap resumed>)               = 0x7fa310cf4000
+2157  close(3 <unfinished ...>
+2156  mmap(0x7fa310d83000, 188416, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa5000 <unfinished ...>
+2157  <... close resumed>)              = 0
+2156  <... mmap resumed>)               = 0x7fa310d83000
+2157  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2156  mmap(0x7fa310db1000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd2000 <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5c76000
+2156  <... mmap resumed>)               = 0x7fa310db1000
+2157  arch_prctl(ARCH_SET_FS, 0x7fecf5c76740) = 0
+2156  mmap(0x7fa310dbd000, 1608, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2157  set_tid_address(0x7fecf5c76a10 <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310dbd000
+2157  <... set_tid_address resumed>)    = 2157
+2156  close(3 <unfinished ...>
+2157  set_robust_list(0x7fecf5c76a20, 24 <unfinished ...>
+2156  <... close resumed>)              = 0
+2157  <... set_robust_list resumed>)    = 0
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  rseq(0x7fecf5c77060, 0x20, 0, 0x53053053 <unfinished ...>
+2156  <... openat resumed>)             = 3
+2157  <... rseq resumed>)               = 0
+2156  read(3,  <unfinished ...>
+2157  mprotect(0x7fecf5e78000, 16384, PROT_READ) = 0
+2156  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\201\0\0\0\0\0\0"..., 832) = 832
+2157  mprotect(0x7fecf5f23000, 4096, PROT_READ <unfinished ...>
+2156  fstat(3,  <unfinished ...>
+2157  <... mprotect resumed>)           = 0
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=51536, ...}) = 0
+2157  mprotect(0x55830829d000, 8192, PROT_READ <unfinished ...>
+2156  mmap(NULL, 49224, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2157  <... mprotect resumed>)           = 0
+2156  <... mmap resumed>)               = 0x7fa310cd1000
+2157  mprotect(0x7fecf5f63000, 8192, PROT_READ <unfinished ...>
+2156  mmap(0x7fa310cd4000, 24576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000 <unfinished ...>
+2157  <... mprotect resumed>)           = 0
+2156  <... mmap resumed>)               = 0x7fa310cd4000
+2157  prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+2156  mmap(0x7fa310cda000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000 <unfinished ...>
+2157  <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2156  <... mmap resumed>)               = 0x7fa310cda000
+2157  munmap(0x7fecf5f25000, 23575 <unfinished ...>
+2156  mmap(0x7fa310cdc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000 <unfinished ...>
+2157  <... munmap resumed>)             = 0
+2156  <... mmap resumed>)               = 0x7fa310cdc000
+2157  getrandom( <unfinished ...>
+2156  close(3 <unfinished ...>
+2157  <... getrandom resumed>"\x83\x7f\x77\x26\x8c\xf7\x79\x1e", 8, GRND_NONBLOCK) = 8
+2156  <... close resumed>)              = 0
+2157  brk(NULL <unfinished ...>
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  <... brk resumed>)                = 0x558337143000
+2156  <... openat resumed>)             = 3
+2157  brk(0x558337164000 <unfinished ...>
+2156  read(3,  <unfinished ...>
+2157  <... brk resumed>)                = 0x558337164000
+2157  openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  fstat(3,  <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=1340976, ...}) = 0
+2157  <... openat resumed>)             = 3
+2156  mmap(NULL, 1340272, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2157  fstat(3,  <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310b89000
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=2996, ...}) = 0
+2156  mmap(0x7fa310b98000, 999424, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000 <unfinished ...>
+2157  read(3,  <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310b98000
+2157  <... read resumed>"# Locale name alias data base.\n#"..., 4096) = 2996
+2156  mmap(0x7fa310c8c000, 241664, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x103000 <unfinished ...>
+2157  read(3,  <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310c8c000
+2157  <... read resumed>"", 4096)       = 0
+2156  mmap(0x7fa310cc7000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13e000 <unfinished ...>
+2157  close(3 <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310cc7000
+2157  <... close resumed>)              = 0
+2156  mmap(0x7fa310cd0000, 880, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310cd0000
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  close(3 <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... close resumed>)              = 0
+2157  <... openat resumed>)             = 3
+2157  fstat(3,  <unfinished ...>
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=258, ...}) = 0
+2156  <... openat resumed>)             = 3
+2157  mmap(NULL, 258, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+2156  read(3,  <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5f2a000
+2157  close(3 <unfinished ...>
+2156  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2157  <... close resumed>)              = 0
+2156  fstat(3,  <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=137440, ...}) = 0
+2157  <... openat resumed>)             = 3
+2156  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2157  fstat(3,  <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310b87000
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=27028, ...}) = 0
+2156  mmap(NULL, 135264, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2157  mmap(NULL, 27028, PROT_READ, MAP_SHARED, 3, 0) = 0x7fecf5c6f000
+2156  <... mmap resumed>)               = 0x7fa310b65000
+2157  close(3 <unfinished ...>
+2156  mmap(0x7fa310b68000, 110592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000 <unfinished ...>
+2157  <... close resumed>)              = 0
+2156  <... mmap resumed>)               = 0x7fa310b68000
+2157  futex(0x7fecf5e7d72c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+2156  mmap(0x7fa310b83000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000 <unfinished ...>
+2157  <... futex resumed>)              = 0
+2156  <... mmap resumed>)               = 0x7fa310b83000
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  mmap(0x7fa310b85000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000 <unfinished ...>
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  <... mmap resumed>)               = 0x7fa310b85000
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  close(3 <unfinished ...>
+2157  <... openat resumed>)             = 3
+2156  <... close resumed>)              = 0
+2157  fstat(3,  <unfinished ...>
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=23, ...}) = 0
+2156  <... openat resumed>)             = 3
+2157  mmap(NULL, 23, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+2156  read(3,  <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5f29000
+2156  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2157  close(3 <unfinished ...>
+2156  fstat(3,  <unfinished ...>
+2157  <... close resumed>)              = 0
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=202904, ...}) = 0
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  mmap(NULL, 200728, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  <... mmap resumed>)               = 0x7fa310b33000
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  mmap(0x7fa310b36000, 139264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000 <unfinished ...>
+2157  <... openat resumed>)             = 3
+2156  <... mmap resumed>)               = 0x7fa310b36000
+2157  fstat(3,  <unfinished ...>
+2156  mmap(0x7fa310b58000, 45056, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000 <unfinished ...>
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=47, ...}) = 0
+2156  <... mmap resumed>)               = 0x7fa310b58000
+2157  mmap(NULL, 47, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+2156  mmap(0x7fa310b63000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000 <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5f28000
+2156  <... mmap resumed>)               = 0x7fa310b63000
+2157  close(3 <unfinished ...>
+2156  close(3 <unfinished ...>
+2157  <... close resumed>)              = 0
+2156  <... close resumed>)              = 0
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  <... openat resumed>)             = 3
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_ADDRESS", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  read(3,  <unfinished ...>
+2157  <... openat resumed>)             = 3
+2157  fstat(3,  <unfinished ...>
+2156  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=127, ...}) = 0
+2156  fstat(3,  <unfinished ...>
+2157  mmap(NULL, 127, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=755864, ...}) = 0
+2157  <... mmap resumed>)               = 0x7fecf5f27000
+2156  mmap(NULL, 757816, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2157  close(3 <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310a79000
+2157  <... close resumed>)              = 0
+2156  mmap(0x7fa310a7d000, 684032, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000 <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310a7d000
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  mmap(0x7fa310b24000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xab000 <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NAME", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310b24000
+2157  <... openat resumed>)             = 3
+2156  mmap(0x7fa310b31000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb7000 <unfinished ...>
+2157  fstat(3, {st_mode=S_IFREG|0644, st_size=62, ...}) = 0
+2156  <... mmap resumed>)               = 0x7fa310b31000
+2157  mmap(NULL, 62, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fecf5f26000
+2156  close(3 <unfinished ...>
+2157  close(3 <unfinished ...>
+2156  <... close resumed>)              = 0
+2157  <... close resumed>)              = 0
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... openat resumed>)             = 3
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  read(3,  <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3
+2156  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2157  fstat(3,  <unfinished ...>
+2156  fstat(3,  <unfinished ...>
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=34, ...}) = 0
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=149760, ...}) = 0
+2157  mmap(NULL, 34, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+2156  mmap(NULL, 147880, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5f25000
+2156  <... mmap resumed>)               = 0x7fa310a54000
+2157  close(3 <unfinished ...>
+2156  mmap(0x7fa310a58000, 90112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000 <unfinished ...>
+2157  <... close resumed>)              = 0
+2156  <... mmap resumed>)               = 0x7fa310a58000
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  mmap(0x7fa310a6e000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000 <unfinished ...>
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  <... mmap resumed>)               = 0x7fa310a6e000
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  mmap(0x7fa310a77000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000 <unfinished ...>
+2157  <... openat resumed>)             = 3
+2156  <... mmap resumed>)               = 0x7fa310a77000
+2157  fstat(3,  <unfinished ...>
+2156  close(3 <unfinished ...>
+2157  <... fstat resumed>{st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+2156  <... close resumed>)              = 0
+2157  close(3)                          = 0
+2156  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310a52000
+2157  <... openat resumed>)             = 3
+2156  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2157  fstat(3,  <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa310a4f000
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=48, ...}) = 0
+2156  arch_prctl(ARCH_SET_FS, 0x7fa310a504c0 <unfinished ...>
+2157  mmap(NULL, 48, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+2156  <... arch_prctl resumed>)         = 0
+2157  <... mmap resumed>)               = 0x7fecf5c6e000
+2156  set_tid_address(0x7fa310a50790 <unfinished ...>
+2157  close(3 <unfinished ...>
+2156  <... set_tid_address resumed>)    = 2156
+2157  <... close resumed>)              = 0
+2156  set_robust_list(0x7fa310a507a0, 24 <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... set_robust_list resumed>)    = 0
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  rseq(0x7fa310a50de0, 0x20, 0, 0x53053053 <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MONETARY", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... rseq resumed>)               = 0
+2157  <... openat resumed>)             = 3
+2157  fstat(3,  <unfinished ...>
+2156  mprotect(0x7fa310fbd000, 16384, PROT_READ <unfinished ...>
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=270, ...}) = 0
+2156  <... mprotect resumed>)           = 0
+2157  mmap(NULL, 270, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+2156  mprotect(0x7fa310a77000, 4096, PROT_READ <unfinished ...>
+2157  <... mmap resumed>)               = 0x7fecf5c6d000
+2156  <... mprotect resumed>)           = 0
+2157  close(3 <unfinished ...>
+2156  mprotect(0x7fa310b31000, 4096, PROT_READ <unfinished ...>
+2157  <... close resumed>)              = 0
+2156  <... mprotect resumed>)           = 0
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  mprotect(0x7fa310b63000, 4096, PROT_READ <unfinished ...>
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  <... mprotect resumed>)           = 0
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_COLLATE", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  mprotect(0x7fa310b85000, 4096, PROT_READ <unfinished ...>
+2157  <... openat resumed>)             = 3
+2156  <... mprotect resumed>)           = 0
+2157  fstat(3, {st_mode=S_IFREG|0644, st_size=1406, ...}) = 0
+2157  mmap(NULL, 1406, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fecf5c6c000
+2157  close(3 <unfinished ...>
+2156  mprotect(0x7fa310cc7000, 20480, PROT_READ <unfinished ...>
+2157  <... close resumed>)              = 0
+2156  <... mprotect resumed>)           = 0
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  mprotect(0x7fa310cdc000, 4096, PROT_READ <unfinished ...>
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2156  <... mprotect resumed>)           = 0
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+2157  fstat(3, {st_mode=S_IFREG|0644, st_size=3360, ...}) = 0
+2157  mmap(NULL, 3360, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fecf5c6b000
+2157  close(3)                          = 0
+2156  mprotect(0x7fa310db1000, 45056, PROT_READ <unfinished ...>
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC <unfinished ...>
+2156  <... mprotect resumed>)           = 0
+2157  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+2157  fstat(3, {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
+2157  mmap(NULL, 50, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fecf5c6a000
+2156  mprotect(0x7fa310ffc000, 24576, PROT_READ <unfinished ...>
+2157  close(3 <unfinished ...>
+2156  <... mprotect resumed>)           = 0
+2157  <... close resumed>)              = 0
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2157  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+2156  mprotect(0x555ff644d000, 16384, PROT_READ <unfinished ...>
+2157  fstat(3,  <unfinished ...>
+2156  <... mprotect resumed>)           = 0
+2157  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=360460, ...}) = 0
+2156  mprotect(0x7fa311041000, 8192, PROT_READ <unfinished ...>
+2157  mmap(NULL, 360460, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+2156  <... mprotect resumed>)           = 0
+2157  <... mmap resumed>)               = 0x7fecf5c11000
+2156  prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+2157  close(3 <unfinished ...>
+2156  <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2157  <... close resumed>)              = 0
+2156  munmap(0x7fa311003000, 23575)     = 0
+2157  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+2156  getrandom( <unfinished ...>
+2157  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2156  <... getrandom resumed>"\x34\x57\xda\xb6\x86\x6e\xe0\x62", 8, GRND_NONBLOCK) = 8
+2157  <... mmap resumed>)               = 0x7fecf5c0f000
+2156  brk(NULL <unfinished ...>
+2157  lseek(3, 0, SEEK_SET <unfinished ...>
+2156  <... brk resumed>)                = 0x5560227c4000
+2157  <... lseek resumed>)              = 0
+2156  brk(0x5560227e5000 <unfinished ...>
+2157  read(3,  <unfinished ...>
+2156  <... brk resumed>)                = 0x5560227e5000
+2157  <... read resumed>"558308271000-558308275000 r--p 0"..., 8192) = 4016
+2157  read(3, "7ffef5717000-7ffef571b000 r--p 0"..., 4176) = 160
+2156  prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE <unfinished ...>
+2157  munmap(0x7fecf5c0f000, 8192 <unfinished ...>
+2156  <... prctl resumed>)              = 1
+2157  <... munmap resumed>)             = 0
+2156  prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */ <unfinished ...>
+2157  mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+2156  <... prctl resumed>)              = -1 EINVAL (Invalid argument)
+2157  <... mmap resumed>)               = 0x7fecf5c0d000
+2156  prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE <unfinished ...>
+2157  lseek(3, 0, SEEK_SET <unfinished ...>
+2156  <... prctl resumed>)              = 1
+2157  <... lseek resumed>)              = 0
+2156  prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */ <unfinished ...>
+2157  read(3,  <unfinished ...>
+2156  <... prctl resumed>)              = -1 EINVAL (Invalid argument)
+2157  <... read resumed>"558308271000-558308275000 r--p 0"..., 16384) = 4016
+2156  prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */ <unfinished ...>
+2157  read(3,  <unfinished ...>
+2156  <... prctl resumed>)              = -1 EINVAL (Invalid argument)
+2157  <... read resumed>"7ffef5717000-7ffef571b000 r--p 0"..., 12368) = 160
+2156  prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */ <unfinished ...>
+2157  read(3,  <unfinished ...>
+2156  <... prctl resumed>)              = -1 EINVAL (Invalid argument)
+2157  <... read resumed>"", 12208)      = 0
+2157  close(3)                          = 0
+2157  munmap(0x7fecf5c0d000, 16384 <unfinished ...>
+2156  openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  <... munmap resumed>)             = 0
+2156  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+2157  sigaltstack({ss_sp=0x55830829f7c0, ss_flags=0, ss_size=65536},  <unfinished ...>
+2156  openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  <... sigaltstack resumed>NULL)    = 0
+2156  <... openat resumed>)             = 3
+2157  rt_sigaction(SIGSEGV, {sa_handler=0x558308296990, sa_mask=[HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7fecf5cbe330},  <unfinished ...>
+2156  fstat(3,  <unfinished ...>
+2157  <... rt_sigaction resumed>NULL, 8) = 0
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=2996, ...}) = 0
+2157  rt_sigaction(SIGSEGV, {sa_handler=0x558308296990, sa_mask=[HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7fecf5cbe330},  <unfinished ...>
+2156  read(3,  <unfinished ...>
+2157  <... rt_sigaction resumed>NULL, 8) = 0
+2156  <... read resumed>"# Locale name alias data base.\n#"..., 4096) = 2996
+2157  fstat(1,  <unfinished ...>
+2156  read(3, "", 4096)                 = 0
+2157  <... fstat resumed>{st_mode=S_IFREG|0777, st_size=0, ...}) = 0
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3,  <unfinished ...>
+2157  brk(0x558337185000 <unfinished ...>
+2156  <... fstat resumed>{st_mode=S_IFREG|0644, st_size=258, ...}) = 0
+2157  <... brk resumed>)                = 0x558337185000
+2156  mmap(NULL, 258, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+2157  fstat(0,  <unfinished ...>
+2156  <... mmap resumed>)               = 0x7fa311008000
+2157  <... fstat resumed>{st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+2156  close(3 <unfinished ...>
+2157  lseek(0, 0, SEEK_CUR <unfinished ...>
+2156  <... close resumed>)              = 0
+2157  <... lseek resumed>)              = -1 ESPIPE (Illegal seek)
+2156  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+2157  read(0,  <unfinished ...>
+2156  <... openat resumed>)             = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=27028, ...}) = 0
+2156  mmap(NULL, 27028, PROT_READ, MAP_SHARED, 3, 0) = 0x7fa310a48000
+2156  close(3)                          = 0
+2156  futex(0x7fa310fc272c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=23, ...}) = 0
+2156  mmap(NULL, 23, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa311007000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=47, ...}) = 0
+2156  mmap(NULL, 47, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa311006000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=127, ...}) = 0
+2156  mmap(NULL, 127, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa311005000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=62, ...}) = 0
+2156  mmap(NULL, 62, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa311004000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=34, ...}) = 0
+2156  mmap(NULL, 34, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa311003000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=48, ...}) = 0
+2156  mmap(NULL, 48, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa310a47000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=270, ...}) = 0
+2156  mmap(NULL, 270, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa310a46000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=1406, ...}) = 0
+2156  mmap(NULL, 1406, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa310a45000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=3360, ...}) = 0
+2156  mmap(NULL, 3360, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa310a44000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
+2156  mmap(NULL, 50, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa310a43000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=360460, ...}) = 0
+2156  mmap(NULL, 360460, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa3109ea000
+2156  close(3)                          = 0
+2156  rt_sigaction(SIGSYS, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGPWR, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGIO, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGVTALRM, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGXFSZ, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGXCPU, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGTTIN, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGCHLD, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGSTKFLT, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGTERM, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGALRM, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGPIPE, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGUSR2, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGSEGV, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGUSR1, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGFPE, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGBUS, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGABRT, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGTRAP, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGILL, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  rt_sigaction(SIGHUP, {sa_handler=0x555ff6439a30, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa310e03330}, NULL, 8) = 0
+2156  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=23575, ...}) = 0
+2156  mmap(NULL, 23575, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa3109e4000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/", 0x7ffe813ab9f0, 0) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/", 0x7ffe813ab9f0, 0) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/", {st_mode=S_IFDIR|0755, st_size=36864, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/", 0x7ffe813ab9f0, 0) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/", 0x7ffe813ab9f0, 0) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/", {st_mode=S_IFDIR|0755, st_size=36864, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v3/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v3/", 0x7ffe813ab9f0, 0) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v2/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v2/", 0x7ffe813ab9f0, 0) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/lib/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/lib/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v3/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v3/", 0x7ffe813ab9f0, 0) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v2/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v2/", 0x7ffe813ab9f0, 0) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/libnuma.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/usr/lib/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2156  brk(0x556022806000)               = 0x556022806000
+2156  munmap(0x7fa3109e4000, 23575)     = 0
+2156  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=23575, ...}) = 0
+2156  mmap(NULL, 23575, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa3109e4000
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnuma.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libnuma.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/lib/libnuma.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/usr/lib/libnuma.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2156  munmap(0x7fa3109e4000, 23575)     = 0
+2156  openat(AT_FDCWD, "/proc/self/stat", O_RDONLY) = 3
+2156  read(3, "2156 (ps) R 2155 2152 372 34816 "..., 1024) = 312
+2156  close(3)                          = 0
+2156  getpid()                          = 2156
+2156  newfstatat(AT_FDCWD, "/proc/self/task", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa3109c9000
+2156  openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 3
+2156  fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+2156  read(3, "15761.65 188963.41\n", 1024) = 19
+2156  close(3)                          = 0
+2156  brk(0x556022828000)               = 0x556022828000
+2156  openat(AT_FDCWD, "/proc/2156/status", O_RDONLY) = 3
+2156  read(3, "Name:\tps\nUmask:\t0022\nState:\tR (r"..., 1024) = 1024
+2156  read(3, "owed:\tfff\nCpus_allowed_list:\t0-1"..., 1024) = 130
+2156  close(3)                          = 0
+2156  newfstatat(AT_FDCWD, "/proc/2156", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/2156/stat", O_RDONLY) = 3
+2156  read(3, "2156 (ps) R 2155 2152 372 34816 "..., 1024) = 312
+2156  close(3)                          = 0
+2156  ioctl(1, TIOCGWINSZ, 0x7ffe813ac5b0) = -1 ENOTTY (Inappropriate ioctl for device)
+2156  ioctl(2, TIOCGWINSZ, {ws_row=27, ws_col=144, ws_xpixel=0, ws_ypixel=0}) = 0
+2156  ioctl(1, TCGETS, 0x7ffe813ac500)  = -1 ENOTTY (Inappropriate ioctl for device)
+2156  geteuid()                         = 1000
+2156  openat(AT_FDCWD, "/proc/sys/kernel/pid_max", O_RDONLY) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+2156  read(3, "4194304\n", 1024)        = 8
+2156  close(3)                          = 0
+2156  mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa3109a7000
+2156  mprotect(0x7fa3109c8000, 4096, PROT_NONE) = 0
+2156  openat(AT_FDCWD, "/proc", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2156  fstat(3, {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+2156  openat(AT_FDCWD, "/proc/uptime", O_RDONLY) = 4
+2156  fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+2156  read(4, "15761.66 188963.56\n", 1024) = 19
+2156  close(4)                          = 0
+2156  mmap(NULL, 692224, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa3108fe000
+2156  getdents64(3, 0x556022805790 /* 86 entries */, 32768) = 2384
+2156  newfstatat(AT_FDCWD, "/proc/1", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/1/stat", O_RDONLY) = 4
+2156  read(4, "1 (systemd) S 0 1 1 0 -1 4194560"..., 1024) = 185
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/1/status", O_RDONLY) = 4
+2156  read(4, "Name:\tsystemd\nUmask:\t0000\nState:"..., 1024) = 1024
+2156  read(4, "ry_ctxt_switches:\t2624\nnonvolunt"..., 1024) = 54
+2156  close(4)                          = 0
+2156  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+2156  connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+2156  close(4)                          = 0
+2156  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+2156  connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+2156  close(4)                          = 0
+2156  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+2156  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+2156  fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+2156  read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 526
+2156  read(4, "", 4096)                 = 0
+2156  fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+2156  fstat(4, {st_mode=S_IFREG|0644, st_size=1555, ...}) = 0
+2156  lseek(4, 0, SEEK_SET)             = 0
+2156  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1555
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/1/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/1/cmdline", O_RDONLY) = 4
+2156  read(4, "/sbin/init\0", 131072)   = 11
+2156  read(4, "", 131061)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/1/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/2", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/2/stat", O_RDONLY) = 4
+2156  read(4, "2 (init-systemd(Ub) S 1 0 0 0 -1"..., 2048) = 175
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2/status", O_RDONLY) = 4
+2156  read(4, "Name:\tinit-systemd(Ub\nUmask:\t002"..., 2048) = 1083
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/2/cmdline", O_RDONLY) = 4
+2156  read(4, "/init\0", 131072)        = 6
+2156  read(4, "", 131066)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/6", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/6/stat", O_RDONLY) = 4
+2156  read(4, "6 (init) S 2 0 0 0 -1 1077936128"..., 2048) = 160
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/6/status", O_RDONLY) = 4
+2156  read(4, "Name:\tinit\nUmask:\t0022\nState:\tS "..., 2048) = 1071
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/6/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/6/cmdline", O_RDONLY) = 4
+2156  read(4, "plan9\0--control-socket\0006\0--log-l"..., 131072) = 80
+2156  read(4, "", 130992)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/6/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/51", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/51/stat", O_RDONLY) = 4
+2156  read(4, "51 (systemd-journal) S 1 51 51 0"..., 2048) = 184
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/51/status", O_RDONLY) = 4
+2156  read(4, "Name:\tsystemd-journal\nUmask:\t002"..., 2048) = 1104
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/51/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/51/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/lib/systemd/systemd-journal"..., 131072) = 34
+2156  read(4, "", 131038)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/51/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/93", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/93/stat", O_RDONLY) = 4
+2156  read(4, "93 (systemd-udevd) S 1 93 93 0 -"..., 2048) = 185
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/93/status", O_RDONLY) = 4
+2156  read(4, "Name:\tsystemd-udevd\nUmask:\t0022\n"..., 2048) = 1104
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/93/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/93/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/lib/systemd/systemd-udevd\0", 131072) = 31
+2156  read(4, "", 131041)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/93/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/143", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/143/stat", O_RDONLY) = 4
+2156  read(4, "143 (systemd-resolve) S 1 143 14"..., 2048) = 180
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/143/status", O_RDONLY) = 4
+2156  read(4, "Name:\tsystemd-resolve\nUmask:\t002"..., 2048) = 1127
+2156  close(4)                          = 0
+2156  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+2156  fstat(4, {st_mode=S_IFREG|0644, st_size=1555, ...}) = 0
+2156  lseek(4, 0, SEEK_SET)             = 0
+2156  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1555
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/143/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/143/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/lib/systemd/systemd-resolve"..., 131072) = 34
+2156  read(4, "", 131038)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/143/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/144", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/144/stat", O_RDONLY) = 4
+2156  read(4, "144 (systemd-timesyn) S 1 144 14"..., 2048) = 179
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/144/status", O_RDONLY) = 4
+2156  read(4, "Name:\tsystemd-timesyn\nUmask:\t002"..., 2048) = 1130
+2156  close(4)                          = 0
+2156  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+2156  fstat(4, {st_mode=S_IFREG|0644, st_size=1555, ...}) = 0
+2156  lseek(4, 0, SEEK_SET)             = 0
+2156  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1555
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/144/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/144/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/lib/systemd/systemd-timesyn"..., 131072) = 35
+2156  read(4, "", 131037)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/144/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/154", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/154/stat", O_RDONLY) = 4
+2156  read(4, "154 (cron) S 1 154 154 0 -1 1077"..., 2048) = 172
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/154/status", O_RDONLY) = 4
+2156  read(4, "Name:\tcron\nUmask:\t0022\nState:\tS "..., 2048) = 1085
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/154/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/154/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/sbin/cron\0-f\0-P\0", 131072) = 21
+2156  read(4, "", 131051)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/154/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/155", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/155/stat", O_RDONLY) = 4
+2156  read(4, "155 (dbus-daemon) S 1 155 155 0 "..., 2048) = 174
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/155/status", O_RDONLY) = 4
+2156  read(4, "Name:\tdbus-daemon\nUmask:\t0022\nSt"..., 2048) = 1109
+2156  close(4)                          = 0
+2156  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+2156  fstat(4, {st_mode=S_IFREG|0644, st_size=1555, ...}) = 0
+2156  lseek(4, 0, SEEK_SET)             = 0
+2156  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1555
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/155/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/155/cmdline", O_RDONLY) = 4
+2156  read(4, "@dbus-daemon\0--system\0--address="..., 131072) = 97
+2156  read(4, "", 130975)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/155/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/167", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/167/stat", O_RDONLY) = 4
+2156  read(4, "167 (redis-server) S 1 167 167 0"..., 2048) = 182
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/167/status", O_RDONLY) = 4
+2156  read(4, "Name:\tredis-server\nUmask:\t0007\nS"..., 2048) = 1129
+2156  close(4)                          = 0
+2156  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+2156  fstat(4, {st_mode=S_IFREG|0644, st_size=1555, ...}) = 0
+2156  lseek(4, 0, SEEK_SET)             = 0
+2156  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1555
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/167/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/167/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/bin/redis-server 127.0.0.1:"..., 131072) = 80
+2156  read(4, "", 130992)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/167/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/177", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/177/stat", O_RDONLY) = 4
+2156  read(4, "177 (systemd-logind) S 1 177 177"..., 2048) = 177
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/177/status", O_RDONLY) = 4
+2156  read(4, "Name:\tsystemd-logind\nUmask:\t0022"..., 2048) = 1110
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/177/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/177/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/lib/systemd/systemd-logind\0", 131072) = 32
+2156  read(4, "", 131040)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/177/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/182", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/182/stat", O_RDONLY) = 4
+2156  read(4, "182 (wsl-pro-service) S 1 182 18"..., 2048) = 199
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/182/status", O_RDONLY) = 4
+2156  read(4, "Name:\twsl-pro-service\nUmask:\t002"..., 2048) = 1110
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/182/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/182/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/libexec/wsl-pro-service\0-vv"..., 131072) = 33
+2156  read(4, "", 131039)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/182/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/188", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/188/stat", O_RDONLY) = 4
+2156  read(4, "188 (agetty) S 1 188 188 58624 1"..., 2048) = 163
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/188/status", O_RDONLY) = 4
+2156  read(4, "Name:\tagetty\nUmask:\t0022\nState:\t"..., 2048) = 1085
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/188/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/188/cmdline", O_RDONLY) = 4
+2156  read(4, "/sbin/agetty\0-o\0-p -- \\u\0--nocle"..., 131072) = 73
+2156  read(4, "", 130999)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/188/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  openat(AT_FDCWD, "/proc/tty/drivers", O_RDONLY) = 4
+2156  read(4, "/dev/tty             /dev/tty   "..., 9999) = 567
+2156  close(4)                          = 0
+2156  newfstatat(AT_FDCWD, "/dev/hvc0", {st_mode=S_IFCHR|0600, st_rdev=makedev(0xe5, 0), ...}, 0) = 0
+2156  newfstatat(AT_FDCWD, "/proc/195", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/195/stat", O_RDONLY) = 4
+2156  read(4, "195 (rsyslogd) S 1 195 195 0 -1 "..., 2048) = 179
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/195/status", O_RDONLY) = 4
+2156  read(4, "Name:\trsyslogd\nUmask:\t0022\nState"..., 2048) = 1122
+2156  close(4)                          = 0
+2156  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+2156  fstat(4, {st_mode=S_IFREG|0644, st_size=1555, ...}) = 0
+2156  lseek(4, 0, SEEK_SET)             = 0
+2156  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1555
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/195/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/195/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/sbin/rsyslogd\0-n\0-iNONE\0", 131072) = 29
+2156  read(4, "", 131043)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/195/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/198", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/198/stat", O_RDONLY) = 4
+2156  read(4, "198 (agetty) S 1 198 198 1025 19"..., 2048) = 162
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/198/status", O_RDONLY) = 4
+2156  read(4, "Name:\tagetty\nUmask:\t0022\nState:\t"..., 2048) = 1086
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/198/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/198/cmdline", O_RDONLY) = 4
+2156  read(4, "/sbin/agetty\0-o\0-p -- \\u\0--nocle"..., 131072) = 43
+2156  read(4, "", 131029)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/198/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/tty1", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x4, 0x1), ...}, 0) = 0
+2156  newfstatat(AT_FDCWD, "/proc/216", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/216/stat", O_RDONLY) = 4
+2156  read(4, "216 (unattended-upgr) S 1 216 21"..., 2048) = 183
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/216/status", O_RDONLY) = 4
+2156  read(4, "Name:\tunattended-upgr\nUmask:\t002"..., 2048) = 1097
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/216/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/216/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/bin/python3\0/usr/share/unat"..., 131072) = 94
+2156  read(4, "", 130978)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/216/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/220", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/220/stat", O_RDONLY) = 4
+2156  read(4, "220 (apache2) S 1 220 220 0 -1 4"..., 2048) = 177
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/220/status", O_RDONLY) = 4
+2156  read(4, "Name:\tapache2\nUmask:\t0022\nState:"..., 2048) = 1089
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/220/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/220/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/sbin/apache2\0-k\0start\0", 131072) = 27
+2156  read(4, "", 131045)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/220/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/223", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/223/stat", O_RDONLY) = 4
+2156  read(4, "223 (apache2) S 220 220 220 0 -1"..., 2048) = 190
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/223/status", O_RDONLY) = 4
+2156  read(4, "Name:\tapache2\nUmask:\t0022\nState:"..., 2048) = 1098
+2156  close(4)                          = 0
+2156  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+2156  fstat(4, {st_mode=S_IFREG|0644, st_size=1555, ...}) = 0
+2156  lseek(4, 0, SEEK_SET)             = 0
+2156  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1555
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/223/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/223/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/sbin/apache2\0-k\0start\0", 131072) = 27
+2156  read(4, "", 131045)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/223/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/224", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/224/stat", O_RDONLY) = 4
+2156  read(4, "224 (apache2) S 220 220 220 0 -1"..., 2048) = 189
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/224/status", O_RDONLY) = 4
+2156  read(4, "Name:\tapache2\nUmask:\t0022\nState:"..., 2048) = 1098
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/224/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/224/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/sbin/apache2\0-k\0start\0", 131072) = 27
+2156  read(4, "", 131045)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/224/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/370", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/370/stat", O_RDONLY) = 4
+2156  read(4, "370 (SessionLeader) S 2 370 370 "..., 2048) = 175
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/370/status", O_RDONLY) = 4
+2156  read(4, "Name:\tSessionLeader\nUmask:\t0022\n"..., 2048) = 1092
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/370/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/370/cmdline", O_RDONLY) = 4
+2156  read(4, "/init\0", 131072)        = 6
+2156  read(4, "", 131066)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/370/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/371", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/371/stat", O_RDONLY) = 4
+2156  read(4, "371 (Relay(372)) S 370 370 370 0"..., 2048) = 178
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/371/status", O_RDONLY) = 4
+2156  read(4, "Name:\tRelay(372)\nUmask:\t0022\nSta"..., 2048) = 1092
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/371/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/371/cmdline", O_RDONLY) = 4
+2156  read(4, "/init\0", 131072)        = 6
+2156  read(4, "", 131066)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/371/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/372", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/372/stat", O_RDONLY) = 4
+2156  read(4, "372 (bash) S 371 372 372 34816 2"..., 2048) = 328
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/372/status", O_RDONLY) = 4
+2156  read(4, "Name:\tbash\nUmask:\t0022\nState:\tS "..., 2048) = 1150
+2156  close(4)                          = 0
+2156  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+2156  fstat(4, {st_mode=S_IFREG|0644, st_size=1555, ...}) = 0
+2156  lseek(4, 0, SEEK_SET)             = 0
+2156  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1555
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/372/environ", O_RDONLY) = 4
+2156  read(4, "HOSTTYPE=x86_64\0LANG=C.UTF-8\0PAT"..., 131072) = 1874
+2156  read(4, "", 129198)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/372/cmdline", O_RDONLY) = 4
+2156  read(4, "-bash\0", 131072)        = 6
+2156  read(4, "", 131066)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/372/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts0", 0x7ffe813ac400, 0) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+2156  newfstatat(AT_FDCWD, "/proc/373", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/373/stat", O_RDONLY) = 4
+2156  read(4, "373 (login) S 2 373 373 34817 47"..., 2048) = 176
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/373/status", O_RDONLY) = 4
+2156  read(4, "Name:\tlogin\nUmask:\t0002\nState:\tS"..., 2048) = 1135
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/373/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/373/cmdline", O_RDONLY) = 4
+2156  read(4, "/bin/login\0-f\0\0\0\0\0\0\0\0\0", 131072) = 22
+2156  read(4, "", 131050)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/373/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts1", 0x7ffe813ac400, 0) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts/1", {st_mode=S_IFCHR|0600, st_rdev=makedev(0x88, 0x1), ...}, 0) = 0
+2156  newfstatat(AT_FDCWD, "/proc/465", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/465/stat", O_RDONLY) = 4
+2156  read(4, "465 (systemd) S 1 465 465 0 -1 4"..., 2048) = 176
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/465/status", O_RDONLY) = 4
+2156  read(4, "Name:\tsystemd\nUmask:\t0002\nState:"..., 2048) = 1150
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/465/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/465/cmdline", O_RDONLY) = 4
+2156  read(4, "/usr/lib/systemd/systemd\0--user\0", 131072) = 32
+2156  read(4, "", 131040)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/465/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/466", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/466/stat", O_RDONLY) = 4
+2156  read(4, "466 ((sd-pam)) S 465 465 465 0 -"..., 2048) = 167
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/466/status", O_RDONLY) = 4
+2156  read(4, "Name:\t(sd-pam)\nUmask:\t0002\nState"..., 2048) = 1112
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/466/environ", O_RDONLY) = -1 EACCES (Permission denied)
+2156  openat(AT_FDCWD, "/proc/466/cmdline", O_RDONLY) = 4
+2156  read(4, "(sd-pam)\0", 131072)     = 9
+2156  read(4, "", 131063)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/466/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/proc/479", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/479/stat", O_RDONLY) = 4
+2156  read(4, "479 (bash) S 373 479 373 34817 4"..., 2048) = 319
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/479/status", O_RDONLY) = 4
+2156  read(4, "Name:\tbash\nUmask:\t0002\nState:\tS "..., 2048) = 1148
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/479/environ", O_RDONLY) = 4
+2156  read(4, "HOME=/home/avellin\0SHELL=/bin/ba"..., 131072) = 366
+2156  read(4, "", 130706)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/479/cmdline", O_RDONLY) = 4
+2156  read(4, "-bash\0", 131072)        = 6
+2156  read(4, "", 131066)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/479/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts1", 0x7ffe813ac400, 0) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts/1", {st_mode=S_IFCHR|0600, st_rdev=makedev(0x88, 0x1), ...}, 0) = 0
+2156  newfstatat(AT_FDCWD, "/proc/2152", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/2152/stat", O_RDONLY) = 4
+2156  read(4, "2152 (strace) S 372 2152 372 348"..., 2048) = 320
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2152/status", O_RDONLY) = 4
+2156  read(4, "Name:\tstrace\nUmask:\t0022\nState:\t"..., 2048) = 1157
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2152/environ", O_RDONLY) = 4
+2156  read(4, "SHELL=/bin/bash\0WSL2_GUI_APPS_EN"..., 131072) = 4054
+2156  read(4, "", 127018)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2152/cmdline", O_RDONLY) = 4
+2156  read(4, "strace\0-f\0-o\0trace.txt\0./q1\0", 131072) = 28
+2156  read(4, "", 131044)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2152/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts0", 0x7ffe813ac400, 0) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+2156  newfstatat(AT_FDCWD, "/proc/2155", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/2155/stat", O_RDONLY) = 4
+2156  read(4, "2155 (q1) S 2152 2152 372 34816 "..., 2048) = 302
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2155/status", O_RDONLY) = 4
+2156  read(4, "Name:\tq1\nUmask:\t0022\nState:\tS (s"..., 2048) = 1154
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2155/environ", O_RDONLY) = 4
+2156  read(4, "SHELL=/bin/bash\0WSL2_GUI_APPS_EN"..., 131072) = 4054
+2156  read(4, "", 127018)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2155/cmdline", O_RDONLY) = 4
+2156  read(4, "./q1\0", 131072)         = 5
+2156  read(4, "", 131067)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2155/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts0", 0x7ffe813ac400, 0) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+2156  newfstatat(AT_FDCWD, "/proc/2156", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/2156/stat", O_RDONLY) = 4
+2156  read(4, "2156 (ps) R 2155 2152 372 34816 "..., 2048) = 313
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2156/status", O_RDONLY) = 4
+2156  read(4, "Name:\tps\nUmask:\t0022\nState:\tR (r"..., 2048) = 1155
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2156/environ", O_RDONLY) = 4
+2156  read(4, "SHELL=/bin/bash\0WSL2_GUI_APPS_EN"..., 131072) = 4054
+2156  read(4, "", 127018)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2156/cmdline", O_RDONLY) = 4
+2156  read(4, "ps\0aux\0", 131072)      = 7
+2156  read(4, "", 131065)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2156/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts0", 0x7ffe813ac400, 0) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+2156  newfstatat(AT_FDCWD, "/proc/2157", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+2156  openat(AT_FDCWD, "/proc/2157/stat", O_RDONLY) = 4
+2156  read(4, "2157 (grep) S 2155 2152 372 3481"..., 2048) = 308
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2157/status", O_RDONLY) = 4
+2156  read(4, "Name:\tgrep\nUmask:\t0022\nState:\tS "..., 2048) = 1158
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2157/environ", O_RDONLY) = 4
+2156  read(4, "SHELL=/bin/bash\0WSL2_GUI_APPS_EN"..., 131072) = 4054
+2156  read(4, "", 127018)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2157/cmdline", O_RDONLY) = 4
+2156  read(4, "grep\0root\0", 131072)   = 10
+2156  read(4, "", 131062)               = 0
+2156  close(4)                          = 0
+2156  openat(AT_FDCWD, "/proc/2157/ctty", O_RDONLY) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts0", 0x7ffe813ac400, 0) = -1 ENOENT (No such file or directory)
+2156  newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+2156  getdents64(3, 0x556022805790 /* 0 entries */, 32768) = 0
+2156  close(3)                          = 0
+2156  fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+2156  openat(AT_FDCWD, "/proc/meminfo", O_RDONLY) = 3
+2156  lseek(3, 0, SEEK_SET)             = 0
+2156  read(3, "MemTotal:        3669940 kB\nMemF"..., 8191) = 1391
+2156  lseek(3, 0, SEEK_SET)             = 0
+2156  read(3, "MemTotal:        3669940 kB\nMemF"..., 8191) = 1391
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=149, ...}) = 0
+2156  fstat(3, {st_mode=S_IFREG|0644, st_size=149, ...}) = 0
+2156  read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 149
+2156  lseek(3, -80, SEEK_CUR)           = 69
+2156  read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 80
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/proc/cpuinfo", O_RDONLY) = 3
+2156  fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+2156  read(3, "processor\t: 0\nvendor_id\t: Authen"..., 1024) = 1024
+2156  read(3, "p vaes vpclmulqdq rdpid fsrm\nbug"..., 1024) = 1024
+2156  read(3, " ibpb stibp vmmcall fsgsbase bmi"..., 1024) = 1024
+2156  read(3, "tsc rep_good nopl tsc_reliable n"..., 1024) = 1024
+2156  read(3, "s\t: 6\napicid\t\t: 3\ninitial apicid"..., 1024) = 1024
+2156  read(3, "anagement:\n\nprocessor\t: 4\nvendor"..., 1024) = 1024
+2156  read(3, "e_vmload umip vaes vpclmulqdq rd"..., 1024) = 1024
+2156  read(3, "re ssbd ibrs ibpb stibp vmmcall "..., 1024) = 1024
+2156  read(3, "lm constant_tsc rep_good nopl ts"..., 1024) = 1024
+2156  read(3, ": 3\ncpu cores\t: 6\napicid\t\t: 7\nin"..., 1024) = 1024
+2156  read(3, "tual\npower management:\n\nprocesso"..., 1024) = 1024
+2156  read(3, "hold v_vmsave_vmload umip vaes v"..., 1024) = 1024
+2156  read(3, "t perfctr_core ssbd ibrs ibpb st"..., 1024) = 1024
+2156  read(3, "pdpe1gb rdtscp lm constant_tsc r"..., 1024) = 1024
+2156  read(3, "s\t: 12\ncore id\t\t: 5\ncpu cores\t: "..., 1024) = 1024
+2156  read(3, "sical, 48 bits virtual\npower man"..., 1024) = 42
+2156  read(3, "", 1024)                 = 0
+2156  close(3)                          = 0
+2156  openat(AT_FDCWD, "/proc/stat", O_RDONLY) = 3
+2156  fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+2156  lseek(3, 0, SEEK_SET)             = 0
+2156  read(3, "cpu  2743 0 7145 18896666 708 0 "..., 8192) = 1677
+2156  read(3, "", 6144)                 = 0
+2156  lseek(3, 0, SEEK_SET)             = 0
+2156  read(3, "cpu  2743 0 7145 18896667 708 0 "..., 8192) = 1677
+2156  read(3, "", 6144)                 = 0
+2156  close(3)                          = 0
+2156  munmap(0x7fa3108fe000, 692224)    = 0
+2156  write(1, "USER         PID %CPU %MEM    VS"..., 2985 <unfinished ...>
+2157  <... read resumed>"USER         PID %CPU %MEM    VS"..., 98304) = 2985
+2156  <... write resumed>)              = 2985
+2157  fstat(1,  <unfinished ...>
+2156  close(1)                          = 0
+2157  <... fstat resumed>{st_mode=S_IFREG|0777, st_size=0, ...}) = 0
+2156  close(2 <unfinished ...>
+2157  read(0,  <unfinished ...>
+2156  <... close resumed>)              = 0
+2157  <... read resumed>"", 94208)      = 0
+2157  write(1, "root           1  0.0  0.3  2163"..., 1593) = 1593
+2156  exit_group(0 <unfinished ...>
+2157  close(1 <unfinished ...>
+2156  <... exit_group resumed>)         = ?
+2157  <... close resumed>)              = 0
+2157  close(2 <unfinished ...>
+2156  +++ exited with 0 +++
+2155  <... wait4 resumed>NULL, 0, NULL) = 2156
+2157  <... close resumed>)              = 0
+2155  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2156, si_uid=1000, si_status=0, si_utime=1 /* 0.01 s */, si_stime=7 /* 0.07 s */} ---
+2157  exit_group(0 <unfinished ...>
+2155  wait4(-1,  <unfinished ...>
+2157  <... exit_group resumed>)         = ?
+2157  +++ exited with 0 +++
+2155  <... wait4 resumed>NULL, 0, NULL) = 2157
+2155  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2157, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+2155  getrandom("\xb0\x10\x66\xd1\xb3\x5a\xfb\xa4", 8, GRND_NONBLOCK) = 8
+2155  brk(NULL)                         = 0x56413d581000
+2155  brk(0x56413d5a2000)               = 0x56413d5a2000
+2155  openat(AT_FDCWD, "output.txt", O_RDONLY) = 3
+2155  fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+2155  write(1, "---- Output Preview ----\n", 25) = 25
+2155  fstat(3, {st_mode=S_IFREG|0777, st_size=1593, ...}) = 0
+2155  read(3, "root           1  0.0  0.3  2163"..., 4096) = 1593
+2155  write(1, "root           1  0.0  0.3  2163"..., 78) = 78
+2155  write(1, "root           2  0.0  0.0   261"..., 73) = 73
+2155  write(1, "root           6  0.0  0.0   261"..., 147) = 147
+2155  write(1, "root          51  0.0  0.4  5042"..., 101) = 101
+2155  write(1, "root          93  0.0  0.1  2412"..., 98) = 98
+2155  close(3)                          = 0
+2155  exit_group(0)                     = ?
+2155  +++ exited with 0 +++
